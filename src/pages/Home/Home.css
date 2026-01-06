@@ -37,8 +37,8 @@
 
 .overview-content {
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  padding: 3rem;
-  border-radius: 25px;
+  padding: 2rem;
+  border-radius: 20px;
   color: white;
   box-shadow: 0 10px 40px rgba(102, 126, 234, 0.3);
   position: relative;
@@ -66,7 +66,6 @@
   border-radius: 25px;
   font-size: 0.7rem;
   font-weight: 600;
-  margin-bottom: 1.5rem;
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
@@ -75,16 +74,14 @@
 }
 
 .overview-title {
-  font-size: 1.8rem;
   font-weight: bold;
-  margin-bottom: 1.5rem;
   line-height: 1.2;
 }
 
 .overview-description {
   font-size: 0.8rem;
   line-height: 1.8;
-  margin-bottom: 2.5rem;
+  margin-bottom: 1rem;
   opacity: 0.95;
   max-width: 900px;
 }
@@ -93,8 +90,8 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 2rem;
-  margin-top: 2.5rem;
-  padding-top: 2.5rem;
+  margin-top: 1rem;
+  padding-top: 1rem;
   border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 
@@ -120,7 +117,7 @@
 /* Capabilities Section */
 .capabilities-section {
   margin: 2rem;
-  padding: 3rem;
+  padding: 2rem;
   background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
   border-radius: 25px;
 }
@@ -204,7 +201,7 @@
 /* Partners Section */
 .partners-section {
   margin: 2rem;
-  padding: 3rem;
+  padding: 2rem;
   background: white;
   border-radius: 25px;
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
@@ -271,7 +268,7 @@
 /* Roadmap Section */
 .roadmap-section {
   margin: 2rem;
-  padding: 3rem;
+  padding: 2rem;
   background: linear-gradient(135deg, #1a1f35 0%, #0f1419 100%);
   border-radius: 25px;
   color: white;
@@ -393,7 +390,7 @@
   text-align: center;
   color: var(--theme-color);
   margin-bottom: 2rem;
-  font-size: 1.3rem;
+  margin: 0;
   font-weight: bold;
 }
 
@@ -444,7 +441,7 @@
 /* Process Section */
 .process-section {
   margin: 2rem;
-  padding: 3rem;
+  padding: 2rem;
   background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
   border-radius: 20px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
@@ -452,10 +449,10 @@
 
 .section-title {
   text-align: center;
-  font-size: 1.5rem;
   font-weight: bold;
   color: #2d3748;
   position: relative;
+  margin: 0;
   padding-bottom: 1rem;
 }
 
@@ -540,7 +537,7 @@
 /* Showcase Section */
 .showcase-section {
   margin: 2rem;
-  padding: 3rem;
+  padding: 2rem;
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   border-radius: 20px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
@@ -693,7 +690,7 @@
 /* Enhanced Get Started Section */
 .get-started-section {
   margin: 2rem;
-  padding: 3rem;
+  padding: 2rem;
   background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
   border-radius: 20px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
@@ -703,7 +700,7 @@
   text-align: center;
   color: #4a5568;
   font-size: 0.8rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
