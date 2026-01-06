@@ -2,9 +2,9 @@ import { Routes, Route } from 'react-router-dom';
 import { useState } from 'react';
 import Header from './components/Header';
 import Sidebar from './components/Sidebar';
-import Home from './pages/Home';
-import Innovation from './pages/Innovation';
-import InnovationDetail from './pages/InnovationDetail';
+import Home from './pages/Home/Home';
+import Innovation from './pages/Innovation/Innovation';
+import InnovationDetail from './pages/InnovationDetail/InnovationDetail';
 import './App.css';
 
 function App() {
