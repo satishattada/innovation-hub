@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import demoImage from '../../../public/assets/demos.png';
+import demoImage from '../../../../public/assets/demos.png';
 
 interface Idea {
   id: number;
