@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 interface InnovationHeroProps {
   onSubmitClick: () => void;
@@ -7,14 +7,16 @@ interface InnovationHeroProps {
 const InnovationHero: React.FC<InnovationHeroProps> = ({ onSubmitClick }) => {
   return (
     <section className="innovation-hero">
-      <h1>Innovation Hub</h1>
-      <p>
-        Transform your ideas into reality. Join thousands of innovators
-        driving change across our organization.
-      </p>
-      <button className="submit-idea-btn" onClick={onSubmitClick}>
-        ✨ Submit New Idea
-      </button>
+      <div className="hero-image-container">
+        <h1>Innovation Hub</h1>
+        <p>
+          Transform your ideas into reality. Join thousands of innovators
+          driving change across our organization.
+        </p>
+        <button className="submit-idea-btn" onClick={onSubmitClick}>
+          ✨ Submit New Idea
+        </button>
+      </div>
       <div className="idea-stats">
         <div className="stat-item">
           <span className="stat-item-number">247</span>
