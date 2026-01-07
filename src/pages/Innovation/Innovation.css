@@ -1,8 +1,5 @@
 /* Innovation.css */
 .innovation-container {
-  max-width: 1400px;
-  margin: 0 auto;
-  /* padding: 0 2rem; */
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
   min-height: 100vh;
@@ -11,13 +8,21 @@
 .innovation-hero {
   text-align: center;
   margin-bottom: 2rem;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(
+      135deg,
+      rgba(102, 126, 234, 0.1) 0%,
+      rgb(59 20 99 / 95%) 100%
+    ),
+    url(https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2072&auto=format&fit=crop)
+      center / cover;
   border-radius: 0 0 20px 20px;
   color: white;
   position: relative;
   overflow: hidden;
   padding-bottom: 16px;
   display: flex;
+  justify-content: space-between;
+  padding: 20px;
 }
 
 .innovation-hero::before {
@@ -27,8 +32,29 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="white" opacity="0.1"/><circle cx="75" cy="75" r="1" fill="white" opacity="0.1"/><circle cx="50" cy="10" r="0.5" fill="white" opacity="0.1"/><circle cx="90" cy="40" r="0.5" fill="white" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
-  opacity: 0.3;
+  background: radial-gradient(
+      circle at 20% 50%,
+      rgba(255, 255, 255, 0.1) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      circle at 80% 80%,
+      rgba(255, 255, 255, 0.08) 0%,
+      transparent 50%
+    ),
+    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="white" opacity="0.1"/><circle cx="75" cy="75" r="1" fill="white" opacity="0.1"/><circle cx="50" cy="10" r="0.5" fill="white" opacity="0.1"/><circle cx="90" cy="40" r="0.5" fill="white" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+  opacity: 0.4;
+  animation: pulse 15s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.6;
+  }
 }
 
 .innovation-hero h1 {
@@ -77,40 +103,40 @@
 
 .idea-stats {
   display: flex;
-    justify-content: center;
-    gap: 3rem;
-    margin-top: 2rem;
-    position: relative;
-    z-index: 1;
-    margin-bottom: 1rem;
+  justify-content: center;
+  gap: 3rem;
+  margin-top: 2rem;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 1rem;
 }
 
 .stat-item {
   text-align: center;
-    background: rgba(255, 255, 255, 0.1);
-    padding: 1.5rem;
-    border-radius: 12px;
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 1.5rem;
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .stat-number {
   font-size: 1rem;
-    font-weight: 900;
-    display: block;
-    /* margin-bottom: 0.5rem; */
-    color: #ffffff;
+  font-weight: 900;
+  display: block;
+  /* margin-bottom: 0.5rem; */
+  color: #ffffff;
 }
 
 .stat-item-number {
   font-size: 1.5rem;
-    font-weight: 900;
-    display: block;
-    /* margin-bottom: 0.5rem; */
-    color: #ffffff;
+  font-weight: 900;
+  display: block;
+  /* margin-bottom: 0.5rem; */
+  color: #ffffff;
 }
 
 .stat-label {
@@ -445,16 +471,16 @@
 }
 
 .category-card {
-      background: white;
-    border-radius: 16px;
-    padding: 1rem;
-    text-align: center;
-    box-shadow: -1px 0px 16px 8px rgba(0, 0, 0, 0.08);
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    border: 1px solid #f3f4f6;
-    cursor: pointer;
-    position: relative;
-    overflow: hidden;
+  background: white;
+  border-radius: 16px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: -1px 0px 16px 8px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid #f3f4f6;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
 }
 
 .category-card::before {
@@ -480,7 +506,7 @@
 }
 
 .innovation-list-container {
-    padding: 15px
+  padding: 15px 30px;
 }
 
 .category-icon {
