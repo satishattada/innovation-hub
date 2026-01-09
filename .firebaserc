@@ -1,0 +1,13 @@
+{
+  "projects": {},
+  "targets": {
+    "pcs-gcp-cr-10069-prj-llabs-uk": {
+      "hosting": {
+        "main": [
+          "innovation-studio-at-london"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}
